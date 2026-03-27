@@ -1,77 +1,12 @@
-import Link from 'next/link'
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-export default function Palety() {
+export default function Page() {
   return (
     <>
-      <div className="page-hero">
-        <div className="container">
-          <span className="tag">Logistika &amp; Automobilový priemysel</span>
-          <h1>Transportné palety</h1>
-          <p>Transportné palety sú základným kameňom modernej logistiky a skladovania nie len v automotíve. Pevná a unifikovaná základňa pre efektívny presun tovaru vo veľkom množstve.</p>
-        </div>
-      </div>
-
-      <section className="white">
-        <div className="container">
-          <div className="two-col">
-            <div>
-              <span className="tag">Nerobotické palety</span>
-              <h2 className="section-title">Nerobotické palety</h2>
-              <p>Transportné palety sú základným kameňom modernej logistiky a skladovania nie len v automotíve. Ich hlavným účelom je vytvoriť pevnú a unifikovanú základňu, ktorá umožňuje efektívny presun tovaru vo veľkom množstve bez ohľadu na to či je materiál zakladaný ručne alebo robotom.</p>
-              <br/><Link href="/kontakt" className="btn-primary">Mám záujem</Link>
-            </div>
-            <div className="img-card">
-              <img src="https://www.etraktor.sk/images/nerobotické-palety.jpg" alt="Nerobotické palety" style={{width:'100%',height:260,objectFit:'contain',padding:'1rem',background:'var(--bg)'}}/>
-              <div className="img-card-body"><div className="img-card-title">Nerobotické transportné palety</div><div className="img-card-desc">Kliknite pre zväčšenie</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg">
-        <div className="container">
-          <div className="two-col">
-            <div className="img-card">
-              <img src="https://www.etraktor.sk/images/roboticke-palety.jpg" alt="Robotické palety" style={{width:'100%',height:260,objectFit:'contain',padding:'1rem',background:'var(--bg)'}}/>
-              <div className="img-card-body"><div className="img-card-title">Robotické palety a zásobníky</div><div className="img-card-desc">Kliknite pre zväčšenie</div></div>
-            </div>
-            <div>
-              <span className="tag">Robotické riešenia</span>
-              <h2 className="section-title">Robotické palety &amp; zásobníky</h2>
-              <p>Robotické palety a zásobníky sú navrhnuté pre plne automatizované výrobné linky. Zaručujú presnú polohu dielov pre robotické uchopovanie a presun.</p>
-              <br/>
-              <div className="check-list">
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Robotické palety pre automobilový priemysel</span></div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Robotické zásobníky s presnou polohou dielov</span></div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Vlastná výroba pod jednou strechou</span></div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Konštrukčný vývoj, výroba, montáž, dokumentácia</span></div>
-              </div>
-              <br/><Link href="/kontakt" className="btn-primary">Dopytovať riešenie</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="refs-section">
-        <div className="container">
-          <span className="tag">Naši partneri a referencie</span>
-          <div className="refs-logos">
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/tuke.png" alt="Strojnícka fakulta TU Košice"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/piafa.png" alt="PIAFA Vyškov"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/uniza.png" alt="Žilinská Univerzita"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref4.png" alt="Referencia 4"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref5.png" alt="Referencia 5"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref6.png" alt="Referencia 6"/></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="cta-banner">
-        <div className="container"><div className="cta-inner">
-          <div><h2>Potrebujete transportné palety?</h2><p>Navrhneme riešenie presne podľa Vašich požiadaviek.</p></div>
-          <Link href="/kontakt" className="btn-primary" style={{background:'white',color:'var(--green-dark)'}}>Kontaktujte nás</Link>
-        </div></div>
-      </section>
+      <Nav />
+      <div dangerouslySetInnerHTML={{ __html: "<div class=\"mobile-menu\" id=\"mobileMenu\"><a href=\"index.html\">Domov</a><a href=\"palety.html\">Transportn\u00e9 palety</a><a href=\"zariadenia.html\">Jedno\u00fa\u010delov\u00e9 zariadenia</a><a href=\"vyroba.html\">V\u00fdroba</a><a href=\"produkty.html\">eTRAKTOR</a><a href=\"kontakt.html\">Kontakt</a></div>\n<div class=\"page-hero\"><div class=\"container\">\n  <span class=\"tag\">Logistika &amp; Automobilov\u00fd priemysel</span>\n  <h1>Transportn\u00e9 palety</h1>\n  <p>Transportn\u00e9 palety s\u00fa z\u00e1kladn\u00fdm kame\u0148om modernej logistiky a skladovania nie len v automot\u00edve. Pevn\u00e1 a unifikovan\u00e1 z\u00e1klad\u0148a pre efekt\u00edvny presun tovaru vo ve\u013ekom mno\u017estve.</p>\n</div></div>\n<section class=\"white\"><div class=\"container\">\n  <div class=\"two-col\">\n    <div>\n      <span class=\"tag\">Nerobotick\u00e9 palety</span>\n      <h2 class=\"section-title\">Nerobotick\u00e9 palety</h2>\n      <p>Transportn\u00e9 palety s\u00fa z\u00e1kladn\u00fdm kame\u0148om modernej logistiky a skladovania nie len v automot\u00edve. Ich hlavn\u00fdm \u00fa\u010delom je vytvori\u0165 pevn\u00fa a unifikovan\u00fa z\u00e1klad\u0148u, ktor\u00e1 umo\u017e\u0148uje efekt\u00edvny presun tovaru vo ve\u013ekom mno\u017estve bez oh\u013eadu na to \u010di je materi\u00e1l zakladan\u00fd ru\u010dne alebo robotom.</p>\n      <br/><a href=\"kontakt.html\" class=\"btn-primary\">M\u00e1m z\u00e1ujem</a>\n    </div>\n    <div class=\"img-card\" onclick=\"openLightbox(['/images/palety_f149ab5c.jpeg','/images/palety_1c58982b.jpeg'],0)\">\n      <img src=\"/images/palety_f149ab5c.jpeg\" alt=\"Nerobotick\u00e9 palety\" style=\"width:100%;height:260px;object-fit:contain;padding:1rem;background:var(--bg);\"/>\n      <div class=\"img-card-body\"><div class=\"img-card-title\">Nerobotick\u00e9 transportn\u00e9 palety</div><div class=\"img-card-desc\">Kliknite pre zv\u00e4\u010d\u0161enie</div></div>\n    </div>\n  </div>\n</div></section>\n<section class=\"bg\"><div class=\"container\">\n  <div class=\"two-col\">\n    <div class=\"img-card\" onclick=\"openLightbox(['/images/palety_f149ab5c.jpeg','/images/palety_1c58982b.jpeg'],1)\">\n      <img src=\"/images/palety_1c58982b.jpeg\" alt=\"Robotick\u00e9 palety\" style=\"width:100%;height:260px;object-fit:contain;padding:1rem;background:var(--bg);\"/>\n      <div class=\"img-card-body\"><div class=\"img-card-title\">Robotick\u00e9 palety a z\u00e1sobn\u00edky</div><div class=\"img-card-desc\">Kliknite pre zv\u00e4\u010d\u0161enie</div></div>\n    </div>\n    <div>\n      <span class=\"tag\">Robotick\u00e9 rie\u0161enia</span>\n      <h2 class=\"section-title\">Robotick\u00e9 palety &amp; z\u00e1sobn\u00edky</h2>\n      <p>Robotick\u00e9 palety a z\u00e1sobn\u00edky s\u00fa navrhnut\u00e9 pre plne automatizovan\u00e9 v\u00fdrobn\u00e9 linky. Zaru\u010duj\u00fa presn\u00fa polohu dielov pre robotick\u00e9 uchopovanie a presun.</p>\n      <br/>\n      <div class=\"check-list\">\n        <div class=\"check-item\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"2.5\" stroke-linecap=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg><span>Robotick\u00e9 palety pre automobilov\u00fd priemysel</span></div>\n        <div class=\"check-item\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"2.5\" stroke-linecap=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg><span>Robotick\u00e9 z\u00e1sobn\u00edky s presnou polohou dielov</span></div>\n        <div class=\"check-item\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"2.5\" stroke-linecap=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg><span>Vlastn\u00e1 v\u00fdroba pod jednou strechou</span></div>\n        <div class=\"check-item\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"2.5\" stroke-linecap=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg><span>Kon\u0161truk\u010dn\u00fd v\u00fdvoj, v\u00fdroba, mont\u00e1\u017e, dokument\u00e1cia</span></div>\n      </div>\n      <br/><a href=\"kontakt.html\" class=\"btn-primary\">Dopytova\u0165 rie\u0161enie</a>\n    </div>\n  </div>\n</div></section>\n<section class=\"refs-section\">\n<div class=\"container\">\n  <span class=\"tag\">Na\u0161i partneri a referencie</span>\n  <div class=\"refs-logos\">\n    <div class=\"ref-logo\"><img src=\"/images/palety_5d0f3321.jpeg\" alt=\"Strojn\u00edcka fakulta TU Ko\u0161ice\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/palety_628dfd47.jpeg\" alt=\"PIAFA Vy\u0161kov\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/palety_3c3460a4.jpeg\" alt=\"\u017dilinsk\u00e1 Univerzita\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/palety_3528a549.jpeg\" alt=\"Referencia 4\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/palety_e470d827.jpeg\" alt=\"Referencia 5\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/palety_35108fac.jpeg\" alt=\"Referencia 6\"/></div>\n  </div>\n</div>\n</section>\n<section class=\"cta-banner\"><div class=\"container\"><div class=\"cta-inner\">\n  <div><h2>Potrebujete transportn\u00e9 palety?</h2><p>Navrhneme rie\u0161enie presne pod\u013ea Va\u0161ich po\u017eiadaviek.</p></div>\n  <a href=\"kontakt.html\" class=\"btn-primary\" style=\"background:white;color:var(--green-dark);\">Kontaktujte n\u00e1s</a>\n</div></div></section>\n<div class=\"lightbox\" id=\"lightbox\"><button class=\"lb-close\" onclick=\"closeLb()\">&#215;</button><button class=\"lb-arrow lb-prev\" onclick=\"lbNav(-1)\">&#8249;</button><img id=\"lbImg\" src=\"\" alt=\"\"/><button class=\"lb-arrow lb-next\" onclick=\"lbNav(1)\">&#8250;</button><div class=\"lb-counter\" id=\"lbCount\"></div></div>" }} />
+      <Footer />
     </>
-  )
+  );
 }
