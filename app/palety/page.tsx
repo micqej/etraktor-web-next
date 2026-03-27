@@ -1,105 +1,76 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Transportné palety – Etraktor, s.r.o.',
-  description: 'Nerobotické aj robotické transportné palety pre automobilový priemysel. Robotické zásobníky a logistické riešenia na kľúč.',
-}
-
-export default function PaletyPage() {
+export default function Palety() {
   return (
     <>
-      <section className="page-hero">
+      <div className="page-hero">
         <div className="container">
-          <span className="tag">Logistika & Automotív</span>
+          <span className="tag">Logistika &amp; Automobilový priemysel</span>
           <h1>Transportné palety</h1>
-          <p>Základný kameň modernej logistiky. Nerobotické aj robotické palety pre automobilový priemysel, robotické zásobníky.</p>
+          <p>Transportné palety sú základným kameňom modernej logistiky a skladovania nie len v automotíve. Pevná a unifikovaná základňa pre efektívny presun tovaru vo veľkom množstve.</p>
         </div>
-      </section>
+      </div>
 
-      <section className="bg-white">
+      <section className="white">
         <div className="container">
           <div className="two-col">
             <div>
-              <img src="https://www.etraktor.sk/wp-content/uploads/2022/01/palety.jpg" alt="Transportné palety" />
+              <span className="tag">Nerobotické palety</span>
+              <h2 className="section-title">Nerobotické palety</h2>
+              <p>Transportné palety sú základným kameňom modernej logistiky a skladovania nie len v automotíve. Ich hlavným účelom je vytvoriť pevnú a unifikovanú základňu, ktorá umožňuje efektívny presun tovaru vo veľkom množstve bez ohľadu na to či je materiál zakladaný ručne alebo robotom.</p>
+              <br/><Link href="/kontakt" className="btn-primary">Mám záujem</Link>
+            </div>
+            <div className="img-card">
+              <img src="https://www.etraktor.sk/images/nerobotické-palety.jpg" alt="Nerobotické palety" style={{width:'100%',height:260,objectFit:'contain',padding:'1rem',background:'var(--bg)'}}/>
+              <div className="img-card-body"><div className="img-card-title">Nerobotické transportné palety</div><div className="img-card-desc">Kliknite pre zväčšenie</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg">
+        <div className="container">
+          <div className="two-col">
+            <div className="img-card">
+              <img src="https://www.etraktor.sk/images/roboticke-palety.jpg" alt="Robotické palety" style={{width:'100%',height:260,objectFit:'contain',padding:'1rem',background:'var(--bg)'}}/>
+              <div className="img-card-body"><div className="img-card-title">Robotické palety a zásobníky</div><div className="img-card-desc">Kliknite pre zväčšenie</div></div>
             </div>
             <div>
-              <span className="tag">O produkte</span>
-              <h2 className="section-title">Palety na mieru</h2>
-              <p style={{ marginBottom: '1rem' }}>
-                Navrhujeme a vyrábame transportné palety presne podľa požiadaviek zákazníka. Každá paleta je optimalizovaná pre konkrétny diel a výrobný proces.
-              </p>
-              <p>
-                Spolupracujeme s poprednými spoločnosťami v automobilovom priemysle a dodávame riešenia, ktoré zvyšujú efektivitu logistiky a znižujú náklady.
-              </p>
+              <span className="tag">Robotické riešenia</span>
+              <h2 className="section-title">Robotické palety &amp; zásobníky</h2>
+              <p>Robotické palety a zásobníky sú navrhnuté pre plne automatizované výrobné linky. Zaručujú presnú polohu dielov pre robotické uchopovanie a presun.</p>
+              <br/>
+              <div className="check-list">
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Robotické palety pre automobilový priemysel</span></div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Robotické zásobníky s presnou polohou dielov</span></div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Vlastná výroba pod jednou strechou</span></div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Konštrukčný vývoj, výroba, montáž, dokumentácia</span></div>
+              </div>
+              <br/><Link href="/kontakt" className="btn-primary">Dopytovať riešenie</Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray">
+      <section className="refs-section">
         <div className="container">
-          <span className="tag">Typy produktov</span>
-          <h2 className="section-title">Čo ponúkame</h2>
-          <div className="cards-grid">
-            <div className="card">
-              <img src="https://www.etraktor.sk/wp-content/uploads/2022/01/palety.jpg" alt="Nerobotické palety" className="card-img" />
-              <div className="card-body">
-                <h3>Nerobotické palety</h3>
-                <p>Klasické transportné palety pre manuálnu manipuláciu. Pevná konštrukcia, dlhá životnosť, jednoduchá údržba.</p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="https://www.etraktor.sk/wp-content/uploads/2022/01/palety2.jpg" alt="Robotické palety" className="card-img" />
-              <div className="card-body">
-                <h3>Robotické palety</h3>
-                <p>Palety pre automatizované pracovné stanice. Presná geometria, kompatibilita s robotickými systémami.</p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="https://www.etraktor.sk/wp-content/uploads/2022/01/palety3.jpg" alt="Robotické zásobníky" className="card-img" />
-              <div className="card-body">
-                <h3>Robotické zásobníky</h3>
-                <p>Zásobníkové systémy pre automatické podávanie dielov. Inteligentné riešenia pre Vašu výrobnú linku.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="container">
-          <span className="tag">Proces</span>
-          <h2 className="section-title">Ako to funguje</h2>
-          <div className="extras-grid" style={{ marginTop: '2rem' }}>
-            {[
-              { num: '01', title: 'Analýza požiadaviek', desc: 'Dôkladne analyzujeme Vaše potreby a výrobný proces.' },
-              { num: '02', title: '3D návrh', desc: 'Vytvoríme presný 3D model palety v CAD softvéri.' },
-              { num: '03', title: 'Výroba', desc: 'Výroba v našom vlastnom závode v Bardejove.' },
-              { num: '04', title: 'Testovanie', desc: 'Každá paleta prechádza dôkladnou kontrolou kvality.' },
-            ].map((s) => (
-              <div key={s.num} className="card" style={{ padding: '1.5rem' }}>
-                <div style={{ fontSize: '2.5rem', fontFamily: "'Barlow Condensed'", fontWeight: 900, color: 'var(--gold)', marginBottom: '0.5rem' }}>{s.num}</div>
-                <h3 style={{ fontFamily: "'Barlow Condensed'", fontSize: '1.3rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.5rem', color: 'var(--green-dark)' }}>{s.title}</h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>{s.desc}</p>
-              </div>
-            ))}
+          <span className="tag">Naši partneri a referencie</span>
+          <div className="refs-logos">
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/tuke.png" alt="Strojnícka fakulta TU Košice"/></div>
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/piafa.png" alt="PIAFA Vyškov"/></div>
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/uniza.png" alt="Žilinská Univerzita"/></div>
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref4.png" alt="Referencia 4"/></div>
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref5.png" alt="Referencia 5"/></div>
+            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref6.png" alt="Referencia 6"/></div>
           </div>
         </div>
       </section>
 
       <section className="cta-banner">
-        <div className="container">
-          <div className="cta-inner">
-            <div>
-              <h2>Zaujali vás naše palety?</h2>
-              <p>Kontaktujte nás a dohodneme sa na stretnutí alebo nezáväznej konzultácii.</p>
-            </div>
-            <Link href="/kontakt" className="btn-primary" style={{ background: 'white', color: 'var(--green-dark)' }}>
-              Kontaktujte nás
-            </Link>
-          </div>
-        </div>
+        <div className="container"><div className="cta-inner">
+          <div><h2>Potrebujete transportné palety?</h2><p>Navrhneme riešenie presne podľa Vašich požiadaviek.</p></div>
+          <Link href="/kontakt" className="btn-primary" style={{background:'white',color:'var(--green-dark)'}}>Kontaktujte nás</Link>
+        </div></div>
       </section>
     </>
   )
