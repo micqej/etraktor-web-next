@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-logo">
-          <img src="https://www.etraktor.sk/wp-content/uploads/2022/01/logo.jpg" alt="logo" style={{ height: 42, borderRadius: '50%', border: '2px solid rgba(255,255,255,0.2)' }} />
+          <img src="/logo.jpg" alt="logo" style={{ height: 42, borderRadius: '50%', border: '2px solid rgba(255,255,255,0.2)' }} />
           <span>etraktor.sk</span>
         </div>
         <div className="footer-links">
