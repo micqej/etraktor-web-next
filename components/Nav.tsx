@@ -23,7 +23,7 @@ export default function Nav() {
           <Link href="/" className="nav-logo">
             <img
               className="nav-logo-img"
-              src="https://www.etraktor.sk/wp-content/uploads/2022/01/logo.jpg"
+              src="/logo.jpg"
               alt="etraktor.sk"
               style={{ height: 46, width: 46, objectFit: 'contain', borderRadius: '50%', border: '2px solid rgba(255,255,255,0.2)' }}
             />
