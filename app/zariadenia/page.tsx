@@ -1,86 +1,12 @@
-import Link from 'next/link'
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-export default function Zariadenia() {
+export default function Page() {
   return (
     <>
-      <div className="page-hero">
-        <div className="container">
-          <span className="tag">Priemyselná automatizácia</span>
-          <h1>Jednoúčelové zariadenia</h1>
-          <p>Vytvoríme Vám zariadenie na kľúč podľa požiadaviek. Testovacie zariadenia, montážne prípravky, kontrolné prípravky a ďalšie.</p>
-        </div>
-      </div>
-
-      <section className="white">
-        <div className="container">
-          <span className="tag">Ukážky realizácií</span>
-          <h2 className="section-title">Naše realizácie</h2>
-          <div className="three-col">
-            <div className="img-card">
-              <img src="https://www.etraktor.sk/images/linka-dveri.jpg" alt="Linka dverí" style={{width:'100%',height:220,objectFit:'contain',padding:'0.5rem',background:'var(--bg)'}}/>
-              <div className="img-card-body"><div className="img-card-title">Linka dverí pre školiace stredisko</div><div className="img-card-desc">Kompletné riešenie na kľúč vrátane konštrukčného vývoja a montáže.</div></div>
-            </div>
-            <div className="img-card">
-              <img src="https://www.etraktor.sk/images/kontrolne-pripravky.jpg" alt="Kontrolné prípravky" style={{width:'100%',height:220,objectFit:'contain',padding:'0.5rem',background:'var(--bg)'}}/>
-              <div className="img-card-body"><div className="img-card-title">Kontrolné prípravky</div><div className="img-card-desc">Presné kontrolné prípravky pre výrobné linky a QA procesy.</div></div>
-            </div>
-            <div className="img-card">
-              <img src="https://www.etraktor.sk/images/nasypny-vazaci-modul.jpg" alt="Násypný vážiaci modul" style={{width:'100%',height:220,objectFit:'contain',padding:'0.5rem',background:'var(--bg)'}}/>
-              <div className="img-card-body"><div className="img-card-title">Násypný vážiaci modul</div><div className="img-card-desc">Špeciálne zariadenie pre presné váženie a dávkovanie materiálu.</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="green-dark">
-        <div className="container">
-          <span className="tag">Náš postup</span>
-          <h2 className="section-title">Vývoj produktu A – Z</h2>
-          <div className="four-col" style={{marginTop:'2rem'}}>
-            <div style={{textAlign:'center',padding:'1.5rem 1rem'}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:'3rem',fontWeight:900,color:'var(--accent)',lineHeight:1,marginBottom:'0.75rem'}}>01</div>
-              <h4 style={{fontWeight:700,marginBottom:'0.5rem',color:'white'}}>Rešerš &amp; Koncept</h4>
-              <p style={{fontSize:'0.85rem',opacity:0.7,lineHeight:1.5}}>Rešerš aktuálnych riešení vo svete, koncepty a plány nákladov.</p>
-            </div>
-            <div style={{textAlign:'center',padding:'1.5rem 1rem'}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:'3rem',fontWeight:900,color:'var(--accent)',lineHeight:1,marginBottom:'0.75rem'}}>02</div>
-              <h4 style={{fontWeight:700,marginBottom:'0.5rem',color:'white'}}>Konštrukcia</h4>
-              <p style={{fontSize:'0.85rem',opacity:0.7,lineHeight:1.5}}>Dodávateľ konštrukčnej dokumentácie, konštrukčný vývoj.</p>
-            </div>
-            <div style={{textAlign:'center',padding:'1.5rem 1rem'}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:'3rem',fontWeight:900,color:'var(--accent)',lineHeight:1,marginBottom:'0.75rem'}}>03</div>
-              <h4 style={{fontWeight:700,marginBottom:'0.5rem',color:'white'}}>Výroba &amp; Montáž</h4>
-              <p style={{fontSize:'0.85rem',opacity:0.7,lineHeight:1.5}}>Realizačná činnosť výroby produktu, montáž a oživenie.</p>
-            </div>
-            <div style={{textAlign:'center',padding:'1.5rem 1rem'}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:'3rem',fontWeight:900,color:'var(--accent)',lineHeight:1,marginBottom:'0.75rem'}}>04</div>
-              <h4 style={{fontWeight:700,marginBottom:'0.5rem',color:'white'}}>Certifikácia</h4>
-              <p style={{fontSize:'0.85rem',opacity:0.7,lineHeight:1.5}}>Dokumentácia a certifikácia v spolupráci s TISR.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="refs-section">
-        <div className="container">
-          <span className="tag">Naši partneri a referencie</span>
-          <div className="refs-logos">
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/tuke.png" alt="Strojnícka fakulta TU Košice"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/piafa.png" alt="PIAFA Vyškov"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/uniza.png" alt="Žilinská Univerzita"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref4.png" alt="Referencia 4"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref5.png" alt="Referencia 5"/></div>
-            <div className="ref-logo"><img src="https://www.etraktor.sk/images/ref6.png" alt="Referencia 6"/></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="cta-banner">
-        <div className="container"><div className="cta-inner">
-          <div><h2>Máte špecifické požiadavky?</h2><p>Vytvoríme zariadenie na kľúč – od konceptu po certifikáciu.</p></div>
-          <Link href="/kontakt" className="btn-primary" style={{background:'white',color:'var(--green-dark)'}}>Kontaktujte nás</Link>
-        </div></div>
-      </section>
+      <Nav />
+      <div dangerouslySetInnerHTML={{ __html: "<div class=\"mobile-menu\" id=\"mobileMenu\"><a href=\"index.html\">Domov</a><a href=\"palety.html\">Transportn\u00e9 palety</a><a href=\"zariadenia.html\">Jedno\u00fa\u010delov\u00e9 zariadenia</a><a href=\"vyroba.html\">V\u00fdroba</a><a href=\"produkty.html\">eTRAKTOR</a><a href=\"kontakt.html\">Kontakt</a></div>\n<div class=\"page-hero\"><div class=\"container\">\n  <span class=\"tag\">Priemyseln\u00e1 automatiz\u00e1cia</span>\n  <h1>Jedno\u00fa\u010delov\u00e9 zariadenia</h1>\n  <p>Vytvor\u00edme V\u00e1m zariadenie na k\u013e\u00fa\u010d pod\u013ea po\u017eiadaviek. Testovacie zariadenia, mont\u00e1\u017ene pr\u00edpravky, kontroln\u00e9 pr\u00edpravky a \u010fal\u0161ie.</p>\n</div></div>\n<section class=\"white\"><div class=\"container\">\n  <span class=\"tag\">Uk\u00e1\u017eky realiz\u00e1ci\u00ed</span>\n  <h2 class=\"section-title\">Na\u0161e realiz\u00e1cie</h2>\n  <div class=\"three-col\">\n    <div class=\"img-card\" onclick=\"openLightbox(['/images/zariadenia_666ca974.jpeg','/images/zariadenia_8beb0717.jpeg','/images/zariadenia_180dd027.jpeg'],0)\">\n      <img src=\"/images/zariadenia_666ca974.jpeg\" alt=\"Linka dver\u00ed\" style=\"width:100%;height:220px;object-fit:contain;padding:0.5rem;background:var(--bg);\"/>\n      <div class=\"img-card-body\"><div class=\"img-card-title\">Linka dver\u00ed pre \u0161koliace stredisko</div><div class=\"img-card-desc\">Kompletn\u00e9 rie\u0161enie na k\u013e\u00fa\u010d vr\u00e1tane kon\u0161truk\u010dn\u00e9ho v\u00fdvoja a mont\u00e1\u017ee.</div></div>\n    </div>\n    <div class=\"img-card\" onclick=\"openLightbox(['/images/zariadenia_666ca974.jpeg','/images/zariadenia_8beb0717.jpeg','/images/zariadenia_180dd027.jpeg'],1)\">\n      <img src=\"/images/zariadenia_8beb0717.jpeg\" alt=\"Kontroln\u00e9 pr\u00edpravky\" style=\"width:100%;height:220px;object-fit:contain;padding:0.5rem;background:var(--bg);\"/>\n      <div class=\"img-card-body\"><div class=\"img-card-title\">Kontroln\u00e9 pr\u00edpravky</div><div class=\"img-card-desc\">Presn\u00e9 kontroln\u00e9 pr\u00edpravky pre v\u00fdrobn\u00e9 linky a QA procesy.</div></div>\n    </div>\n    <div class=\"img-card\" onclick=\"openLightbox(['/images/zariadenia_666ca974.jpeg','/images/zariadenia_8beb0717.jpeg','/images/zariadenia_180dd027.jpeg'],2)\">\n      <img src=\"/images/zariadenia_180dd027.jpeg\" alt=\"N\u00e1sypn\u00fd v\u00e1\u017eiaci modul\" style=\"width:100%;height:220px;object-fit:contain;padding:0.5rem;background:var(--bg);\"/>\n      <div class=\"img-card-body\"><div class=\"img-card-title\">N\u00e1sypn\u00fd v\u00e1\u017eiaci modul</div><div class=\"img-card-desc\">\u0160peci\u00e1lne zariadenie pre presn\u00e9 v\u00e1\u017eenie a d\u00e1vkovanie materi\u00e1lu.</div></div>\n    </div>\n  </div>\n</div></section>\n<section class=\"green-dark\"><div class=\"container\">\n  <span class=\"tag\">N\u00e1\u0161 postup</span><h2 class=\"section-title\">V\u00fdvoj produktu A \u2013 Z</h2>\n  <div class=\"four-col\" style=\"margin-top:2rem;\">\n    <div style=\"text-align:center;padding:1.5rem 1rem;\"><div style=\"font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;color:var(--accent);line-height:1;margin-bottom:0.75rem;\">01</div><h4 style=\"font-weight:700;margin-bottom:0.5rem;color:white;\">Re\u0161er\u0161 &amp; Koncept</h4><p style=\"font-size:0.85rem;opacity:0.7;line-height:1.5;\">Re\u0161er\u0161 aktu\u00e1lnych rie\u0161en\u00ed vo svete, koncepty a pl\u00e1ny n\u00e1kladov.</p></div>\n    <div style=\"text-align:center;padding:1.5rem 1rem;\"><div style=\"font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;color:var(--accent);line-height:1;margin-bottom:0.75rem;\">02</div><h4 style=\"font-weight:700;margin-bottom:0.5rem;color:white;\">Kon\u0161trukcia</h4><p style=\"font-size:0.85rem;opacity:0.7;line-height:1.5;\">Dod\u00e1vate\u013e kon\u0161truk\u010dnej dokument\u00e1cie, kon\u0161truk\u010dn\u00fd v\u00fdvoj.</p></div>\n    <div style=\"text-align:center;padding:1.5rem 1rem;\"><div style=\"font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;color:var(--accent);line-height:1;margin-bottom:0.75rem;\">03</div><h4 style=\"font-weight:700;margin-bottom:0.5rem;color:white;\">V\u00fdroba &amp; Mont\u00e1\u017e</h4><p style=\"font-size:0.85rem;opacity:0.7;line-height:1.5;\">Realiza\u010dn\u00e1 \u010dinnos\u0165 v\u00fdroby produktu, mont\u00e1\u017e a o\u017eivenie.</p></div>\n    <div style=\"text-align:center;padding:1.5rem 1rem;\"><div style=\"font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;color:var(--accent);line-height:1;margin-bottom:0.75rem;\">04</div><h4 style=\"font-weight:700;margin-bottom:0.5rem;color:white;\">Certifik\u00e1cia</h4><p style=\"font-size:0.85rem;opacity:0.7;line-height:1.5;\">Dokument\u00e1cia a certifik\u00e1cia v spolupr\u00e1ci s TISR.</p></div>\n  </div>\n</div></section>\n<section class=\"refs-section\">\n<div class=\"container\">\n  <span class=\"tag\">Na\u0161i partneri a referencie</span>\n  <div class=\"refs-logos\">\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_5d0f3321.jpeg\" alt=\"Strojn\u00edcka fakulta TU Ko\u0161ice\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_628dfd47.jpeg\" alt=\"PIAFA Vy\u0161kov\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_3c3460a4.jpeg\" alt=\"\u017dilinsk\u00e1 Univerzita\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_3528a549.jpeg\" alt=\"Referencia 4\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_e470d827.jpeg\" alt=\"Referencia 5\"/></div>\n    <div class=\"ref-logo\"><img src=\"/images/zariadenia_35108fac.jpeg\" alt=\"Referencia 6\"/></div>\n  </div>\n</div>\n</section>\n<section class=\"cta-banner\"><div class=\"container\"><div class=\"cta-inner\">\n  <div><h2>M\u00e1te \u0161pecifick\u00e9 po\u017eiadavky?</h2><p>Vytvor\u00edme zariadenie na k\u013e\u00fa\u010d \u2013 od konceptu po certifik\u00e1ciu.</p></div>\n  <a href=\"kontakt.html\" class=\"btn-primary\" style=\"background:white;color:var(--green-dark);\">Kontaktujte n\u00e1s</a>\n</div></div></section>\n<div class=\"lightbox\" id=\"lightbox\"><button class=\"lb-close\" onclick=\"closeLb()\">&#215;</button><button class=\"lb-arrow lb-prev\" onclick=\"lbNav(-1)\">&#8249;</button><img id=\"lbImg\" src=\"\" alt=\"\"/><button class=\"lb-arrow lb-next\" onclick=\"lbNav(1)\">&#8250;</button><div class=\"lb-counter\" id=\"lbCount\"></div></div>" }} />
+      <Footer />
     </>
-  )
+  );
 }
