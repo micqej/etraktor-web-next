@@ -217,3 +217,56 @@ section.green-dark .tag{background:rgba(255,255,255,0.12);border-color:rgba(255,
   .hero-stats{grid-template-columns:repeat(2,1fr);}
   .footer-links{justify-content:center;}
 }
+
+/* eTRAKTOR špecifické */
+.spec-table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.spec-table th{background:var(--green-dark);color:white;padding:10px 14px;text-align:left;font-weight:600;}
+.spec-table td{padding:9px 14px;border-bottom:1px solid var(--border);}
+.spec-table tr:nth-child(even) td{background:var(--bg);}
+.spec-table .group-row td{background:var(--green-pale);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--green-dark);}
+.badge-std{display:inline-block;background:#e8f5e9;color:var(--green-dark);border:1px solid #b7d9b8;border-radius:4px;padding:2px 8px;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;}
+.badge-opt{display:inline-block;background:#fff3e0;color:#e65100;border:1px solid #ffcc80;border-radius:4px;padding:2px 8px;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;}
+.eff-item{margin-top:0.75rem;}
+.eff-row{display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.88rem;}
+.eff-name{color:var(--text-muted);}
+.eff-pct{font-weight:700;color:var(--green-dark);}
+.eff-bar-bg{background:#e0e0e0;border-radius:4px;height:10px;}
+.eff-bar{height:10px;border-radius:4px;}
+.eff-bar.green{background:var(--green);}
+.eff-bar.gray{background:#90a4ae;}
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.5rem;}
+.feature-item{display:flex;align-items:flex-start;gap:0.75rem;}
+.feature-icon{width:40px;height:40px;min-width:40px;background:var(--green-pale);border:1px solid #b7d9b8;border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.feature-icon svg{width:20px;height:20px;stroke:var(--green-dark);fill:none;stroke-width:1.8;}
+.feature-title{font-weight:700;font-size:0.9rem;}
+.feature-desc{font-size:0.82rem;color:var(--text-muted);}
+.tab-pane{display:none;}
+.tab-pane.active,.tab-pane{display:block;}
+
+/* Kontakt */
+.contact-info-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;}
+.ci-icon{width:44px;height:44px;min-width:44px;background:var(--green-pale);border:1px solid #b7d9b8;border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.ci-icon svg{width:22px;height:22px;stroke:var(--green-dark);fill:none;stroke-width:1.8;}
+.ci-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--text-muted);margin-bottom:3px;}
+.ci-value{font-size:0.95rem;}
+.ci-value a{color:var(--green);font-weight:500;}
+.contact-form-wrap{background:white;border-radius:var(--radius);padding:2.5rem;border:1px solid var(--border);box-shadow:var(--shadow);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{display:flex;flex-direction:column;margin-bottom:1.25rem;}
+.form-group label{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--text-muted);margin-bottom:6px;}
+.form-group input,.form-group select,.form-group textarea{border:1.5px solid var(--border);border-radius:8px;padding:11px 14px;font-family:'Barlow',sans-serif;font-size:0.95rem;color:var(--text);background:var(--bg);transition:border-color 0.2s;outline:none;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--green);}
+.form-group textarea{resize:vertical;min-height:120px;}
+.form-submit{width:100%;background:var(--green);color:white;border:none;border-radius:8px;padding:14px;font-family:'Barlow',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;transition:background 0.2s;}
+.form-submit:hover{background:var(--green-dark);}
+
+/* About */
+.about-img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);}
+.about-details{margin-top:1.5rem;background:var(--bg);border-radius:10px;padding:1.25rem;border:1px solid var(--border);}
+.detail-row{display:flex;justify-content:space-between;padding:0.4rem 0;border-bottom:1px solid var(--border);font-size:0.9rem;}
+.detail-row:last-child{border-bottom:none;}
+.detail-label{color:var(--text-muted);}
+
+/* Extras */
+.extra-item{display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;background:rgba(255,255,255,0.08);border-radius:8px;border:1px solid rgba(255,255,255,0.12);font-size:0.88rem;color:rgba(255,255,255,0.85);}
+.extra-dot{width:8px;height:8px;min-width:8px;background:var(--accent);border-radius:50%;}
